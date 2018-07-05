@@ -1,0 +1,17 @@
+language: go
+
+go:
+  - "1.10"
+
+branches:
+  only:
+    - master
+
+install:
+  - go get golang.org/x/lint/golint
+  - go get -t ./...
+
+script:
+  - ${GOPATH}/bin/golint ./...
+  - go vet -v ./...
+  - go test -v ./...
