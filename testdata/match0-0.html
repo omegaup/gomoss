@@ -1,0 +1,96 @@
+<HTML>
+<HEAD>
+<TITLE>gomoss/codes/aaa.cpp</TITLE>
+</HEAD>
+<BODY BGCOLOR=white>
+<HR>
+gomoss/codes/aaa.cpp<p><PRE>
+/******************** Beginning of Template **************************/
+/************ ALL HEADER FILE ***********/
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+#include &lt;fstream&gt;
+#include &lt;queue&gt;
+#include &lt;deque&gt;
+#include &lt;bitset&gt;
+#include &lt;iterator&gt;
+#include &lt;list&gt;
+#include &lt;stack&gt;
+#include &lt;map&gt;
+#include &lt;set&gt;
+#include &lt;functional&gt;
+#include &lt;utility&gt;
+#include &lt;climits&gt;
+#include &lt;cmath&gt;
+#include &lt;cstdio&gt;
+#include &lt;cstring&gt;
+#include &lt;iomanip&gt;
+#include &lt;cassert&gt;
+
+<A NAME="0"></A><FONT color = #FF0000><A HREF="match0-1.html#0" TARGET="1"><IMG SRC="http://moss.stanford.edu/bitmaps/tm_0_59.gif" ALT="other" BORDER="0" ALIGN=left></A>
+
+using namespace std;
+
+/************* ALL DEFINE ***************/
+#define MEM(a, b) memset(a, b, sizeof a);
+#define FORS(i, j, k, step) for (int i=j; i&lt;k; i+=step)
+#define FOR(i, j, k) for (int i=j; i&lt;k; i++)
+#define RFORS(i, j, k, step) for (int i=j; i&gt;=k; i-=step)
+#define RFOR(i, j, k, step) for(int i=j; i&gt;=k; i--)
+#define REP(i, k) for(int i = (0); i &lt; (k); i++ )
+#define RREP(i, k) for(int i = j; i &gt;= (k); i-- )
+
+#define ALL(cont) cont.begin(), cont.end()
+#define RALL(cont) cont.begin(), cont.end()
+#define FOREACH(it, l) for(auto it=l.begin(); it != l.end(); it++)
+#define mp make_pair
+#define pb push_back
+#define debug puts("Fango")
+#define INF (int)MAX_INT
+#define EPS (int)1e-9
+#define PI acos(-1)
+#define MOD 1000000007
+
+/****************** TYPEDEF *****************/
+typedef pair&lt;int, int&gt; pii;
+typedef pair&lt;int, pii&gt; piii;
+typedef vector&lt;int&gt; vi;
+typedef vector&lt;string&gt; vs;
+typedef vector&lt;pii&gt; vii;
+typedef vector&lt;piii&gt; viii;
+typedef long long int32;
+typedef unsigned long long uint32;
+typedef long long int int64;
+typedef unsigned long long int uint64;
+
+template &lt;class T&gt;
+    T sqr(T val) {
+        return val * val;
+    }
+
+/*********************** End of Template **************************/
+
+int main() {
+    //freopen("input.txt", "r", stdin);
+    //freopen("output.txt", "w", stdout);
+    priority_queue&lt;pair&lt;int,int&gt;&gt; pq;
+</FONT>    REP(i, 10) {
+        cout &lt;&lt; "hello world" &lt;&lt; endl;
+        pq.push(mp(i, i+1));
+    }
+
+<A NAME="1"></A><FONT color = #00FF00><A HREF="match0-1.html#1" TARGET="1"><IMG SRC="http://moss.stanford.edu/bitmaps/tm_1_22.gif" ALT="other" BORDER="0" ALIGN=left></A>
+
+    while(!pq.empty()) {
+        pair&lt;int, int&gt; p = pq.top();
+        pq.pop();
+        cout &lt;&lt; p.first &lt;&lt; " " &lt;&lt; p.second &lt;&lt; "\n";
+</FONT>    }
+
+}
+</PRE>
+</PRE>
+</BODY>
+</HTML>
